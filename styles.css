@@ -1,14 +1,18 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .signin {
     border: 1px solid lightgray;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 43vw;
+    margin-top: 15vh;
     align-items: center;
-    position: relative;
-    margin: 50vw;
-    padding: 0px 0px 20px 0px;
-    position: fixed;
+    height: min-content;
+    width: min-content;
 }
 
 .email {
@@ -17,3 +21,58 @@
     padding-right: 75px;
 }
 
+input[type="text"] {
+    height: 25px;
+}
+
+#submit {
+    box-sizing: content-box;
+    width: 77%;
+    background-color: RGB(255, 191, 15);
+    margin-top: 20px;
+    border: 0.1px solid black;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid lightgray;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.newaccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.newaccount input {
+    width: 15%;
+    height: 30px;
+}
+
+hr {
+    margin: 70px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
