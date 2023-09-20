@@ -39,7 +39,7 @@ input[type="text"] {
     align-items: center;
 }
 
-.separator::before,
+/* .separator::before,
 .separator::after {
     content: '';
     flex: 1;
@@ -52,7 +52,11 @@ input[type="text"] {
 
 .separator:not(:empty)::after {
     margin-left: .25em;
-}
+} */
+
+/* Got the above commented code from Stackoverflow. It creates a
+horizontal line that crosses the "New To Amazon?" text. Decided to 
+comment it out as it is not my solution. */
 
 .newaccount {
     display: flex;
