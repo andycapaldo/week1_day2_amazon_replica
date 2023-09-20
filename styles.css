@@ -6,6 +6,12 @@ h2, h5 {
     font-weight: normal;
 }
 
+.img {
+    display: flex;
+    flex-direction: row;
+    margin-left: 48vw;
+    margin-top: 15vh;
+}
 
 .signin {
     border: 1px solid lightgray;
