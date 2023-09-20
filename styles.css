@@ -2,17 +2,32 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h2, h5 {
+    font-weight: normal;
+}
+
 
 .signin {
     border: 1px solid lightgray;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 43vw;
+    margin-left: 41vw;
     margin-top: 15vh;
     align-items: center;
     height: min-content;
     width: min-content;
+}
+
+.signin h2 {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.signin h5{
+    margin-left: 20px;
+    margin-top: 0px;
 }
 
 .email {
@@ -21,8 +36,35 @@ body {
     padding-right: 75px;
 }
 
+.password a{
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+}
+
+#pass {
+    margin-top: 25px;
+    margin-left: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+#forgot {
+    margin-left: 275px;
+    position: relative;
+    z-index: 2;
+}
+
 input[type="text"] {
-    height: 25px;
+    height: 30px;
+    width: 400px;
+    margin-left: 20px;
+}
+
+.password input[type="submit"] {
+    margin-left: 25px;
+    height: 30px;
+    width: 400px;
 }
 
 #submit {
@@ -37,6 +79,7 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: gray;
 }
 
 /* .separator::before,
@@ -79,4 +122,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#conditions, #privacy, #help {
+    margin-right: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    color: blue
+}
+
+#legal {
+    font-size: 13px;
 }
